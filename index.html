@@ -1,14 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/Media/poke-favicon.jpg" type="image/x-icon">
+    <!-- fontAwesome -->
+    <script src="https://kit.fontawesome.com/4b900035da.js" crossorigin="anonymous" defer></script>
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- custom js -->
     <script src="/script.js" defer></script>
     <title>Pokedex version II</title>
 </head>
 <body>
-    <h1>test</h1>
+    <div class="background-image"></div>
+    <div class="pokedex">
+        <div class="input-container">
+            <input type="text" id="p-name" name="p-name" placeholder="Search Pokemon here"">
+            <div id="search-icon" ><i class="fa-solid fa-magnifying-glass pointer"></i></div>
+        </div>
+        <div id="no-data">
+            <div id="init-border">
+            </div>
+            <div id="start-image">
+                <img src="/charizard.png" alt="">
+                <div id="start-text">
+                    <p id="not-found-text"class="font-fuzzy">Pokemon not Found!</p>
+                    
+                </div>
+            </div>
+        </div>
+        <div id="data">
+            <div id="image">                
+                <p id="poke-num" class="shadows"><span id="poke-number"></span></p>
+                <img id="pokemon-img" alt="">
+            </div>
+            <div class="info">
+                <h1 id="pokemon-name" class="font-fuzzy"></h1>
+                <div id="block-container">
+                    <span id="type-block" class="shadows"></span>
+                    <span id="power-block" class="shadows"></span>
+                </div>
+                <div class="phisic">
+                    <span>
+                        <h3 id="poke-weight"></h3>
+                        <p class="phisic-p">Weight</p>
+                    </span>
+                    <span>
+                        <h3 id="poke-height"></h3>
+                        <p class="phisic-p">Height</p>
+                    </span>        
+                </div>    
+                <h2 id="base-stats">Base Stats</h2>
+                <table id="table">
+                    <tr>
+                        <td class="left">HP</td>
+                        <td>
+                            <div class="ext-bar">
+                                <div class="int-bar" id="hp-bar"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>ATK</td>
+                        <td>
+                            <div class="ext-bar">
+                                <div class="int-bar" id="atk-bar"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>DEF</td>
+                        <td>
+                            <div class="ext-bar">
+                                <div class="int-bar" id="def-bar"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>SAT</td>
+                        <td>
+                            <div class="ext-bar">
+                                <div class="int-bar" id="sat-bar"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>SDE</td>
+                        <td>
+                            <div class="ext-bar">
+                                <div class="int-bar" id="sde-bar"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>SPD</td>
+                        <td>
+                            <div class="ext-bar">
+                                <div class="int-bar" id="spd-bar"></div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
 </body>
 </html>
