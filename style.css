@@ -25,7 +25,7 @@
 /* background */
 
 .background-image {
-    background: url('./N3DS_PokemonSuperMysteryDungeon_MainIllustration_png_jpgcopy.0.0.jpg') center center no-repeat;
+    background: url('/Media/pokemon_super_mystery_dungeon_desktop_background_by_manikkuderp_d9hwfk8-fullview.jpg') center center no-repeat;
     background-size: cover;
     filter: blur(3px);
     width: 100vw;
@@ -242,7 +242,8 @@ td {
 }
 
 @media screen and (min-width:550px) {
-    .pokedex {       
+    .pokedex {  
+        margin-top: 30px;     
         width:400px;
         height: 755px;        
     }
