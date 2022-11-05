@@ -1,0 +1,251 @@
+/* Global */
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap');
+
+*{
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+/* Helpers */
+
+.font-fuzzy {
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-size: 36px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+.shadows {
+    text-shadow: 2px -3px 5px #000000;
+}
+
+/* background */
+
+.background-image {
+    background: url('./N3DS_PokemonSuperMysteryDungeon_MainIllustration_png_jpgcopy.0.0.jpg') center center no-repeat;
+    background-size: cover;
+    filter: blur(3px);
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.pokedex {    
+    width:100vw; 
+    height:100vh;
+    background:#000;    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.input-container{
+    display: flex;
+}
+
+#p-name {
+    color: #000;
+    width: 90%;
+    padding-left: 15px;
+    height: 40px;
+    width: 89%;
+}
+
+#search-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+}
+
+#no-data,
+#data {
+    height: 95%;
+}
+
+#image,
+#init-border {
+    width:100;
+    height:34%;
+    border-radius: 0 0 40px 40px;
+    z-index:1;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:end;    
+}
+
+#init-border {
+    border: 1px solid #ff0000;
+    border-top: none;
+}
+
+#start-image {
+    display: flex;
+    justify-content: space-around;    
+    height: 55%;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 54px;
+}
+
+#start-image img {
+    width: 100%;
+    margin: auto;
+}
+
+#start-image p {
+    text-align: center;
+}
+
+#start-text {
+    width: 100%;
+    height: 43px;
+}
+
+#not-found-text {
+    display: none;
+    font-size: 30px;
+}
+
+#data {
+    display: none;
+}
+
+#poke-num {
+    position:absolute;
+    right:10px;
+    top:10px;
+}
+
+#pokemon-img {
+    width:30%
+}
+
+.info {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: space-around;
+    height: 62%;
+}
+
+#pokemon-name {
+    margin: 25px 0;
+}
+
+#block-container {
+    width:60%;
+    display:flex;
+    justify-content:space-around;
+    padding:5px 0;
+}
+
+#type-block,
+#power-block {
+    width:50%;
+    display:flex;
+    justify-content:center;
+    padding:4px 0;
+    border-radius:40px;
+    color: #000;
+}
+
+#type-block {
+    margin-right: 15px;
+}
+
+.phisic {
+    width:70%;
+    display:flex;
+    justify-content:space-around;
+}
+
+.phisic h3{
+    margin-bottom: 5px;
+}
+
+.phisic-p{
+    text-align:center;
+    font-size:10px;
+    margin: 0;
+}
+
+#poke-weight,
+#poke-height {
+    margin: 10px 0;
+}
+
+#base-stats {
+    margin: 20px 0;
+}
+
+#table {
+    width:90%;
+}
+
+td {
+    height: 28px;
+}
+
+.left {
+    width:10%;
+}
+
+.ext-bar{
+    background-color: #fff;
+    width: 100%;
+    height: 15px;
+    margin: 0 3px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.int-bar {
+    position: absolute;
+    border-radius: 10px;
+    left: 0;
+    top: 0;
+    height: 15px;    
+    z-index: 2;
+    text-align: center;
+    font-size: 12px;
+    max-width: 100%;
+}
+
+#hp-bar {
+    background:#EB0047;
+}
+
+#atk-bar {
+    background:#FFA424;
+}
+
+#def-bar {
+    background:#0080E7;
+}
+
+#spd-bar {
+    background:#84AEC3;
+}
+
+#sde-bar {
+    background:#00A33C;
+}
+
+#sat-bar {
+    background: #A819D7;
+}
+
+@media screen and (min-width:550px) {
+    .pokedex {       
+        width:400px;
+        height: 755px;        
+    }
+    
+}
+
